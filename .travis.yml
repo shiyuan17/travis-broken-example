@@ -12,3 +12,7 @@ script:
   - echo "script begin"
   - phpunit Test.php
   - echo "script end"
+
+notifications:
+  email:
+    - 1213423761@qq.com
