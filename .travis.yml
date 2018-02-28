@@ -6,6 +6,7 @@ php:
 
 install:
   - echo "install begin"
+  - false
   - echo "install end"
 
 script:
@@ -15,4 +16,7 @@ script:
 
 notifications:
   email:
-    - 1213423761@qq.com
+    recipients:
+      - 1213423761@qq.com
+    on_success: never # default: change
+    on_failure: always # default: always
